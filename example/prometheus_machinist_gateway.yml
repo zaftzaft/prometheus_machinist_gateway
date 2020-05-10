@@ -1,0 +1,9 @@
+prometheus_url: "http://127.0.0.1:9090"
+
+machinist_token: "MACHINIST_TOKEN"
+
+agent_configs:
+  - agent_name: 'prometheus'
+    query: 'up{instance="127.0.0.1"}'
+    tag_includes: [instance]
+    meta_includes: [job]

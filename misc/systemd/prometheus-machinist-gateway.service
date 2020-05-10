@@ -1,0 +1,10 @@
+[Unit]
+Description=Prometheus Machinist Gateway
+
+[Service]
+EnvironmentFile=-/etc/conf.d/prometheus-machinist-gateway
+ExecStart=/usr/bin/prometheus_machinist_gateway $PROMETHEUS_MACHINIST_GATEWAY_ARGS
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

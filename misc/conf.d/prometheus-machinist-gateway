@@ -1,0 +1,1 @@
+PROMETHEUS_MACHINIST_GATEWAY_ARGS="-c /etc/prometheus/prometheus_machinist_gateway.yml"
